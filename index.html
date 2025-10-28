@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Silvânio Gois - Gestor em Performance e BPM/KPIs</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Ajustes Gerais de Fundo e Fonte */
+    body {
+      margin: 0;
+      font-family: 'Roboto', "Segoe UI", Arial, sans-serif;
+      background-color: #0e3a5a; /* Azul Marinho Escuro - Mais sóbrio */
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      height: auto;
+      border-radius: 50%;
+      margin-right: 25px;
+      /* NOVO: Sombra sutil amarelada para destaque */
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); 
+      transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+    
+    /* NOVO: Efeito HOVER na Imagem */
+    header img:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 10px 0 0 0;
+    }
+    
+    header p {
+        font-weight: 300;
+    }
+
+    .linkedin-link {
+      display: inline-flex;
+      align-items: center;
+      background-color: #0A66C2;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 6px;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .linkedin-link i {
+      margin-right: 8px;
+    }
+
+    .linkedin-link:hover {
+      background-color: #084c91;
+    }
+
+    section, main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    
+    /* Títulos Principais de Seção (H2) */
+    section h2, main h2 {
+      color: #ffd700;
+      text-align: center;
+      font-weight: 700;
+      border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+    }
+    
+    /* NOVO: Subtítulos Discretos (H3) dentro de Seções */
+    section h3 {
+        color: #f0f0f0; 
+        font-size: 1.25rem;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      color: #f0f0f0;
+      font-weight: 300;
+    }
+    
+    /* Estilo para o parágrafo do Propósito (Destaque) */
+    section h2 + p {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 1.15rem;
+        margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+        margin-bottom: 12px;
+        font-weight: 400;
+    }
+
+    ul li::before {
+      content: "▪ ";
+      color: #ffd700;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .projeto-card {
+      background-color: rgba(255,255,255,0.05);
+      border-left: 5px solid #ffd700;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      /* NOVO: Adiciona transição para a cor da borda */
+      transition: transform 0.3s, background-color 0.3s, border-left-color 0.3s; 
+    }
+
+    /* Ajuste no Efeito HOVER do Card */
+    .projeto-card:hover {
+      background-color: rgba(255,255,255,0.1);
+      transform: translateY(-5px);
+      border-left-color: #fff; /* Altera a cor da borda para branco no hover */
+    }
+
+    .projeto-card h3 {
+      color: #ffd700;
+      margin-top: 0;
+      font-weight: 700;
+    }
+    
+    .projeto-card p strong {
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background-color: #ffd700;
+      color: #0e3a5a;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 15px 30px;
+      border-radius: 8px;
+      transition: 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cta a:hover {
+      background-color: #fff;
+      color: #0e3a5a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+    }
+
+    .assinatura {
+      text-align: center;
+      font-style: italic;
+      color: #ffd700;
+      margin-top: 50px;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    /* Botão flutuante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      padding: 12px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+      background-color: #1ebd5b;
+    }
+
+    .whatsapp-float i {
+      font-size: 24px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+      }
+
+      header img {
+        margin: 0 0 20px 0;
+      }
+      
+      header div {
+          text-align: center;
+      }
+      
+      section h2 + p {
+          text-align: left;
+          font-size: 1.05rem;
+      }
+    }
+  </style>
+  
+  <script src="https://kit.fontawesome.com/97486e92ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <img src="SG_Executivo-removebg-preview.png" alt="Silvânio Gois">
+    <div>
+      <h1>Silvânio Gois</h1>
+      <p>Gestor em Performance e Otimização de Processos (BPM/KPIs)</p>
+      <a href="https://www.linkedin.com/in/silvanio-gois-6667b918b/" class="linkedin-link" target="_blank">
+        <i class="fab fa-linkedin"></i> Perfil Profissional
+      </a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Propósito Estratégico</h2>
+    <p>
+      Minha atuação é focada em traduzir a <strong>Estratégia Organizacional</strong> em <strong>Ação Gerenciável</strong>. Busco estruturar, simplificar e alinhar processos operacionais e administrativos, utilizando metodologias de gestão baseadas em dados para garantir a fluidez, produtividade e a <strong>evolução contínua</strong> da performance empresarial.
+    </p>
+  </section>
+
+  <section>
+    <h2>Competências Técnicas e Atuação</h2>
+    <p>
+      Utilizo minha formação técnica e visão gerencial para fornecer uma perspectiva 360º, unindo a expertise em Administração e Processos Gerenciais para focar em entregas de alto valor:
+    </p>
+    <ul>
+      <li><strong>Definição e Gestão de OKRs/KPIs</strong> para monitoramento de resultados estratégicos;</li>
+      <li><strong>Mapeamento As-Is/To-Be e Otimização BPM (Business Process Management)</strong>;</li>
+      <li>Implementação de rotinas de <strong>Governança e Controle</strong> (Controle de Mudanças e Qualidade);</li>
+      <li>Gestão integrada de áreas e fluxos administrativos;</li>
+      <li>Análise de Desempenho e suporte a <strong>Projetos de Melhoria Contínua (Kaizen)</strong>;</li>
+      <li>Gestão de equipes e alinhamento de performance.</li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2>Sobre mim</h2>
+    
+    <h3>Fundação Técnica e Acadêmica</h3>
+    <p>
+      Sou <strong>Técnico em Administração</strong> (CRA-SP) e <strong>Técnico em Edificações</strong> (CRT-SP), atualmente graduando em <strong>Processos Gerenciais</strong>. Essa base sólida me permite atuar com eficiência, integrando a visão do chão de fábrica (operação) com as necessidades estratégicas da gestão.
+    </p>
+    
+    <h3>Filosofia de Trabalho</h3>
+    <p>
+      Minha jornada é orientada pela busca de <strong>eficiência, padronização e controle</strong>, transformando ambientes complexos em sistemas organizados, transparentes e de fácil gestão.
+    </p>
+  </section>
+
+  <main>
+    <h2>Cases de Performance</h2>
+    <div class="projetos">
+      <div class="projeto-card">
+        <h3>Case: Otimização do Ciclo de Planejamento</h3>
+        <p>Criação e implantação de um ciclo de planejamento estruturado (mensal/trimestral) com foco em metas SMART e indicadores objetivos.</p>
+        <p><strong>Impacto:</strong> Aumento de 18% na previsibilidade de resultados e maior alinhamento entre as áreas de Suporte e Operação.</p>
+      </div>
+
+      <div class="projeto-card">
+        <h3>Case: Redução de Custos Operacionais</h3>
+        <p>Revisão detalhada de rotinas e fluxos internos (processos não-core) para eliminar retrabalhos e gargalos de produtividade.</p>
+        <p><strong>Impacto:</strong> Redução de 15% nos custos operacionais diretos e aumento da agilidade em entregas críticas (SLA).</p>
+      </div>
+
+      <div class="projeto-card">
+        <h3>Case: Implantação de Gestão Integrada</h3>
+        <p>Implantação de modelos de controle unificados (Dashboards e Relatórios) e padronização de comunicação entre as áreas-chave da organização.</p>
+        <p><strong>Impacto:</strong> Maior sinergia, redução de ruídos de comunicação e decisões mais rápidas, baseadas em informações em <strong>tempo real</strong>.</p>
+      </div>
+    </div>
+    
+    <div class="cta">
+      <a href="https://www.silvaniogois.com.br/" target="_blank">Acesse o Portfólio Completo</a>
+    </div>
+  </main>
+
+  <div class="assinatura">
+    “Gestão é construir resultados com método e clareza.”
+  </div>
+
+  <footer>
+    <p>© 2025 Silvânio Gois - Todos os direitos reservados</p>
+  </footer>
+
+  <a href="https://wa.me/5513988301094" class="whatsapp-float" target="_blank" title="Contato via WhatsApp">
+    <i class="fab fa-whatsapp"></i> Contato
+  </a>
+
+</body>
+</html>
