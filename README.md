@@ -8,11 +8,11 @@
 
 Este projeto apresenta o posicionamento profissional de Silvânio Gois com foco em **traduzir a estratégia organizacional em ação gerenciável**, estruturando, simplificando e alinhando processos operacionais e administrativos por meio de metodologias de gestão baseadas em dados.
 
-🌐 **[Acesse o projeto](https://silvaniosg.github.io/Gestor_em_Performance_e_Otimizacao_de_Processos/)**
+**[Acesse o projeto](https://silvaniosg.github.io/Gestor_em_Performance_e_Otimizacao_de_Processos/)**
 
 ---
 
-## 🎯 Propósito Estratégico
+## Propósito Estratégico
 
 A atuação apresentada está direcionada à estruturação e melhoria dos processos para garantir:
 
@@ -26,37 +26,37 @@ A abordagem busca transformar a estratégia organizacional em ações e processo
 
 ---
 
-## 🧩 Competências Técnicas e Atuação
+## Competências Técnicas e Atuação
 
 A atuação combina formação técnica e visão gerencial para oferecer uma perspectiva integrada das necessidades operacionais e estratégicas.
 
-### 📊 OKRs e KPIs
+### OKRs e KPIs
 
 Definição e gestão de **OKRs e KPIs** para monitoramento dos resultados estratégicos e acompanhamento da performance.
 
-### 🔄 BPM — Business Process Management
+### BPM — Business Process Management
 
 Mapeamento de processos nos modelos **As-Is e To-Be**, identificando oportunidades de otimização e evolução dos fluxos.
 
-### 🛡️ Governança e Controle
+### Governança e Controle
 
 Implementação de rotinas de governança e controle, incluindo **controle de mudanças e qualidade**.
 
-### 🔗 Gestão Integrada
+### Gestão Integrada
 
 Gestão integrada de áreas e fluxos administrativos, buscando maior conexão entre as diferentes partes da organização.
 
-### 📈 Análise de Desempenho
+### Análise de Desempenho
 
 Análise de performance e suporte a projetos de melhoria contínua, incluindo a aplicação do conceito **Kaizen**.
 
-### 👥 Gestão de Equipes
+### Gestão de Equipes
 
 Gestão de equipes e alinhamento de performance para direcionar esforços aos objetivos organizacionais.
 
 ---
 
-## 🧠 Fundação Técnica e Acadêmica
+## Fundação Técnica e Acadêmica
 
 A página apresenta uma formação composta por:
 
@@ -68,7 +68,7 @@ Essa combinação permite integrar a visão operacional às necessidades estrat�
 
 ---
 
-## ⚙️ Filosofia de Trabalho
+## Filosofia de Trabalho
 
 A filosofia apresentada está orientada pela busca de:
 
@@ -78,7 +78,7 @@ O propósito é transformar ambientes complexos em **sistemas organizados, trans
 
 ---
 
-## 📈 Cases de Performance
+## Cases de Performance
 
 ### Case 01 — Otimização do Ciclo de Planejamento
 
@@ -115,7 +115,7 @@ Implantação de modelos de controle unificados por meio de **Dashboards e Relat
 
 ---
 
-## 📌 Modelo de Atuação
+## Modelo de Atuação
 
 O conteúdo da página demonstra uma abordagem baseada na conexão entre:
 
@@ -139,13 +139,13 @@ Essa estrutura representa a lógica de atuação apresentada: transformar objeti
 
 ---
 
-## 💬 Princípio de Gestão
+## Princípio de Gestão
 
 > **“Gestão é construir resultados com método e clareza.”**
 
 ---
 
-## 🔗 Portfólio
+## Portfólio
 
 **[Acesse o projeto completo](https://silvaniosg.github.io/Gestor_em_Performance_e_Otimizacao_de_Processos/)**
 
@@ -153,7 +153,7 @@ Essa estrutura representa a lógica de atuação apresentada: transformar objeti
 
 ---
 
-## 🌐 Conecte-se
+## Conecte-se
 
 ### Site
 
